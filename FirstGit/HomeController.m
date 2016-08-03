@@ -26,7 +26,7 @@
     self.msgLbl.textAlignment = NSTextAlignmentLeft;
     [self.view addSubview:self.msgLbl];
     
-    self.view.backgroundColor = [UIColor redColor];
+//    self.view.backgroundColor = [UIColor redColor];
 }
 
 - (void)viewDidLayoutSubviews {
