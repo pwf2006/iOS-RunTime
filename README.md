@@ -29,13 +29,13 @@
 ## 运行时获取类ivars    
 如果想要在运行的时候获取诸如:   
 @interface HomeController (){
-        int index;
-        NSString *name1;
+    int index;  
+    NSString *name1;
 }   
 
 @property (nonatomic, strong) UILabel *msgLbl;
 
-@end
+@end    
 代码块中声明的"index","name1","msgLbl"属性,则可用class_copyIvarList(),详细使用见工程.
 
 
