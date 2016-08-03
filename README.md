@@ -28,7 +28,8 @@
 这种方法声明的"index"和"name1"属性是无法获取到的,如果获取该种属性则可使用class_copyIvarList()方法来获取.
 ## 运行时获取类ivars    
 如果想要在运行的时候获取诸如:   
-@interface HomeController (){
+@interface HomeController (){  
+
     int index;  
     NSString *name1;
 }   
