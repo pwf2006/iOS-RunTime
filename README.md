@@ -10,7 +10,7 @@
     //获取类的属性
 \- (void)getPropertyList {  
     //属性个数  
-    unsigned int count;
+    unsigned int count;  
     objc_property_t *properties = class_copyPropertyList([self class], &count);
     
     for (int i = 0; i < count; i++) {
