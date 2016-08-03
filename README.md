@@ -29,9 +29,9 @@
 ## 运行时获取类ivars    
 如果想要在运行的时候获取诸如:   
 @interface HomeController (){
-    int index;
-    NSString *name1;
-}
+        int index;
+        NSString *name1;
+}   
 
 @property (nonatomic, strong) UILabel *msgLbl;
 
