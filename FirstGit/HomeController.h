@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeController : UIViewController
+@interface HomeController : UIViewController {
+    NSString *name2;
+}
 
+@property (nonatomic, copy) NSString *name3;
 @end
