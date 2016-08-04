@@ -57,6 +57,7 @@
         NSString *nameStr = [NSString stringWithCString:name encoding:NSUTF8StringEncoding];
         NSLog(@"***属性名:%@", nameStr);
     }
+    free(properties);
 }
 
 - (void)getIvarList {
@@ -66,7 +67,7 @@
         NSString *nameStr = [NSString stringWithUTF8String:ivar_getName(ivarList[i])];
         NSLog(@"***ivarName:%@", nameStr);
     }
-
+    free(ivarList);
 }
 
 //获取一个类的实例方法列表
@@ -77,6 +78,7 @@
         SEL name = method_getName(methods[i]);
         NSLog(@"***实例方法名:%@", NSStringFromSelector(name));
     }
+    free(methods);
 }
 
 //获取一个类的类方法列表
@@ -89,5 +91,6 @@
         SEL name = method_getName(methods[i]);
         NSLog(@"***类方法名:%@", NSStringFromSelector(name));
     }
+    free(methods);
 }
 @end
