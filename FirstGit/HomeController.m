@@ -45,6 +45,7 @@
 + (void)classMethod {
     NSLog(@"****");
 }
+
 //获取类的属性
 - (void)getPropertyList {
     //属性个数
@@ -60,6 +61,7 @@
     free(properties);
 }
 
+//获取类的成员变量
 - (void)getIvarList {
     unsigned int count;
     Ivar *ivarList = class_copyIvarList([self class], &count);
