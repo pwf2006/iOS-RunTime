@@ -31,8 +31,11 @@
 
 此种方法只能获取类的属性,像:   
 @interface HomeController (){   
+
     int index;   
+    
     NSString *name1;   
+    
 }   
 
 这种方法声明的"index"和"name1"属性是无法获取到的,如果获取该种属性则可使用class_copyIvarList()方法来获取.
