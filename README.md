@@ -62,6 +62,11 @@ IOS中每一个类都有一个方法列表,用来保存类的实例方法,实例
        Class metaClass = objc_getMetaClass(class_name);
     2. Class metaClass = object_getClass([self class]);   
     
-在获取到一个类的元类之后,我们就可以通过class_copyMethodList()来获取一个类的类方法.
+在获取到一个类的元类之后,我们就可以通过class_copyMethodList()来获取一个类的类方法.   
+## 联系作者   
+ 如果在使用中遇到问题,请联系674423263@qq.com  
+## License
+
+Project is available under the MIT license. See the LICENSE file for more info.
 
 
