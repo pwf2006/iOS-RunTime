@@ -27,10 +27,10 @@
         NSLog(@"***属性名:%@", nameStr);   
         
     }   
-    
 }   
 
 此种方法只能获取类的属性,像:   
+
 @interface HomeController (){   
 
         int index;   
@@ -41,15 +41,19 @@
 
 这种方法声明的"index"和"name1"属性是无法获取到的,如果获取该种属性则可使用class_copyIvarList()方法来获取.
 ## 运行时获取类ivars
-这里给出一个类:  
-    @interface HomeController (){
-    int index;
-    NSString *name1;
-}
+这里给出一个类:   
 
-@property (nonatomic, strong) UILabel *msgLbl;
-
-@end
+    @interface HomeController (){   
+    
+        int index;   
+    
+        NSString *name1;   
+       
+    }   
+    
+    @property (nonatomic, strong) UILabel *msgLbl;   
+    @end   
+    
 如果要获取"index","name1","msgLbl"这三个名字呢,有一个函数可以办到class_copyIvarList(),详细使用见工程.
 ## 运行获取类的instance methods  
 IOS中每一个类都有一个方法列表,用来保存类的实例方法,实例方法第一次调用完之后,会进行缓存方便下次调用.获取类的实例方法可以用class_copyMethodList()来获取.
