@@ -31,6 +31,7 @@
 }
 
 此种方法只能获取类的属性,像:   
+
     @interface HomeController (){   
         int index;   
         NSString *name1;   
