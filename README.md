@@ -26,10 +26,12 @@
         
         NSLog(@"***属性名:%@", nameStr);   
         
-    }   
+    } 
+    
 }   
 
 此种方法只能获取类的属性,像:   
+
 @interface HomeController (){   
 
     int index;   
