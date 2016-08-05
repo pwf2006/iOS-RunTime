@@ -66,6 +66,7 @@ IOS中每一个类都有一个方法列表,用来保存类的实例方法,实例
 ## 如何使用   
  可以直接下载源码来直接使用;
  也可能通过cocoa pods的方式来使用,在自己的工程目录下建一个Podfile文件,文件内容如下:   
+ 
      s.platform     = :ios   
      target 'PodCeshi' do   
        pod 'iOS-RunTime', :git => 'https://github.com/pwf2006/iOS-RunTime.git'   
