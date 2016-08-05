@@ -26,7 +26,8 @@
         
             NSLog(@"***属性名:%@", nameStr);   
         
-        }     
+        }   
+        free(properties);   
     }
 
 此种方法只能获取类的属性,像:   
