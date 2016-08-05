@@ -65,7 +65,7 @@ IOS中每一个类都有一个方法列表,用来保存类的实例方法,实例
 在获取到一个类的元类之后,我们就可以通过class_copyMethodList()来获取一个类的类方法. 
 ## 如何使用   
  可以直接下载源码来直接使用;
- 也可能通过cocoa pods的方式来使用,在自己的工程目录下建一个Podfile文件,文件内容如下:   
+ 也可能通过cocoa pods的方式来使用,在自己的工程目录下建一个Podfile文件,'PodCeshi'为你自己的工程,Podfile文件内容如下:   
  
      s.platform     = :ios   
      target 'PodCeshi' do   
