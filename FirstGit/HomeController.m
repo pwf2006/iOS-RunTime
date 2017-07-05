@@ -20,6 +20,15 @@
 
 @implementation HomeController
 
+- (instancetype)init {
+    self = [super init];
+    if (self){
+        name1 = @"aa";
+    }
+    
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -34,6 +43,7 @@
     [self getIvarList];
     [self getInstanceMethodList];
     [self getClassMethodList];
+    [self getPrivateIvar];
 }
 
 - (void)viewDidLayoutSubviews {
@@ -92,5 +102,12 @@
         NSLog(@"***类方法名:%@", NSStringFromSelector(name));
     }
     free(methods);
+}
+
+- (void)getPrivateIvar
+{
+    Ivar ivar = class_getInstanceVariable([self class],[@"name1" UTF8String]);
+    NSString *label = (NSString *)object_getIvar(self, ivar);
+    NSLog(@"***label.text = %@", label);
 }
 @end
