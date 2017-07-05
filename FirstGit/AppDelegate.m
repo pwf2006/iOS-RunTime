@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
     HomeController *homeVC = [HomeController new];
     self.window.rootViewController = homeVC;
     self.window.backgroundColor = [UIColor whiteColor];
